@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Slider</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+        <link rel="stylesheet" type="text/css" href="css/slick.css" />
+        <link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
+        <link rel="stylesheet" href="../Homework_14_Khrystych/css/style.css" />
+    </head>
+    <body>
+        <div class="container">
+            <header class="block_header" id="header">
+                <img src="../Homework_14_Khrystych/img/logo.png" alt="" />       
+                <ul class="menu">
+                    <li><a href="" class="block_click">gallery</a></li>
+                    <li><a href="" class="block_click">history</a></li>
+                    <li><a href="" class="block_click">contact us</a></li>
+                </ul>
+                   <button id="burger-icon" class="burger_icon"><div class="burger_icon_item"></div></button>
+            </header>
+            <div id="carousel" class="slider">
+                <div><img src="img/photo01.png" alt="foto" /></div>
+                <div><img src="img/photo02.png" alt="foto" /></div>
+                <div><img src="img/photo03.png" alt="foto" /></div>
+            </div>
+            <nav class="block_nav">
+                <p>
+                    Suspendisse potenti. Curabitur in leo non odio hendrerit semper. Morbi id tempor eros. Donec viverra tempor congue. Suspendisse quis felis ultricies, egestas tellus non, semper est.Donec congue lorem odio, eu ornare nisl
+                    malesuada tincidunt. Nullam ac leo est. Donec varius neque vel ex consectetur aliquet. Aliquam venenatis vel tellus non tincidunt. In viverra tellus ut libero dapibus ullamcorper. Donec non feugiat massa.
+                </p>
+                <h2 class="line">history</h2>
+            </nav>
+            <div class="navbar">
+                <p class="block_text">
+                    <span class="fatty">1890 </span>Fusce rhoncus at sapien at sollicitudin. Quisque semper sollicitudin libero eget placerat. Aliquam quis laoreet tellus. In id congue lacus. Nulla vestibulum turpis et nisi consequat, non
+                    sagittis purus interdum. Nunc eu dolor urna. Quisque fermentum risus quam, at consectetur leo tincidunt id. Nulla facilisi.
+                </p>
+                <p class="block_item">
+                    <span class="fatty">1920</span>Aliquam erat volutpat. Curabitur et accumsan odio, eget scelerisque risus. Suspendisse ultrices mattis accumsan. In hac habitasse platea dictumst. In non nisl turpis. Sed sit amet purus
+                    odio. Donec aliquam leo a tortor tincidunt, vel molestie neque commodo. Ut pellentesque ut ex pulvinar aliquam. Morbi porttitor, felis quis convallis tincidunt, augue felis euismod lectus, a placerat purus justo eget
+                    magna. Mauris neque nisi, pharetra ac posuere nec, vehicula non lorem.
+                </p>
+            </div>
+            <h2 class="line">contact us</h2>
+            <form class="block_footer">
+                <textarea form="type your message here" placeholder="type your message here"></textarea>
+                <input type="submit" class="block_send" value="send"></input>
+            </form> 
+            </а>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script type="text/javascript" src="js/slick.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $("#carousel").slick({
+                    dots: true,
+                });
+            });
+        </script>
+        <script type="text/javascript">
+            let burger = document.querySelector("#burger-icon");
+            let header = document.querySelector("#header");
+            burger.onclick = function () {
+                header.classList.toggle("menu-open");
+            };
+        </script>
+    </body>
+</html>
